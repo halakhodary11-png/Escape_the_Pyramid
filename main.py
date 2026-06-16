@@ -2,12 +2,14 @@ print("🏺 Escape the Pyramid 🏺")
 print("You are trapped inside an ancient pyramid!")
 
 name = input("What is your name, explorer? ")
-
 print("Welcome", name)
 
-answer = input("You see a locked door. What is 2 + 2? ")
+print("\n🏺 Room 1: The Entrance")
+print("Solve the riddle to open the door!")
 
-if answer == "4":
-    print("The door opens! 🚪")
+answer1 = input("What has keys but can't open locks? ")
+
+if answer1.lower() == "keyboard":
+    print("Correct! The door opens 🚪")
 else:
-    print("Wrong answer! The door stays closed.")
+    print("Wrong! Try again next time ❌")
